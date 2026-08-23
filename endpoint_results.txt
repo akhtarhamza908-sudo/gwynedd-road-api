@@ -1,0 +1,2392 @@
+================================================================================
+  GWYNEDD ROAD API — FULL ENDPOINT TEST RESULTS
+  Generated: 2026-07-06 19:00:08
+================================================================================
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /
+  Status : HTTP 200
+  Response:
+{
+  "name": "Gwynedd Road Infrastructure API",
+  "version": "4.0.0",
+  "status": "operational",
+  "endpoints": {
+    "docs": "/docs",
+    "api": "/api/v1",
+    "health": "/api/v1/admin/health",
+    "roads": "/api/v1/roads"
+  }
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/admin/health
+  Status : HTTP 200
+  Response:
+{
+  "status": "ok",
+  "version": "4.0.0",
+  "database": "connected",
+  "cache": "connected",
+  "roads_loaded": 1790,
+  "timestamp": "2026-07-06T14:00:09.098502"
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  POST /api/v1/admin/init-db
+  Status : HTTP 200
+  Response:
+{
+  "status": "success",
+  "message": "Database initialized successfully"
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  POST /api/v1/admin/cache/clear
+  Status : HTTP 200
+  Response:
+{
+  "status": "success",
+  "message": "Cache cleared"
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads
+  Status : HTTP 200
+  Response:
+{
+  "roads": [
+    {
+      "name": "['Aberamffra Road', 'Porkington Terrace']",
+      "ref": "A496",
+      "road_type": "primary",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1624,
+      "total_length_m": 5457.39,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 429384.2219417354,
+        "south": 5841656.016442527,
+        "east": 430972.0744876815,
+        "north": 5843428.034812588
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Abercaseg Road', 'Braichmelyn']",
+      "ref": null,
+      "road_type": "tertiary",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1625,
+      "total_length_m": 233.74,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 429745.4676177348,
+        "south": 5892306.855039014,
+        "east": 429780.3319171843,
+        "north": 5892413.452584793
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Afon Rhos', 'Glan Ffynnon']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1626,
+      "total_length_m": 564.15,
+      "segment_count": 4,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 420344.0297147663,
+        "south": 5889149.330027924,
+        "east": 420506.09103992896,
+        "north": 5889287.940271441
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Allt y Castell', 'Pen Deitsh / Castle Ditch']",
+      "ref": null,
+      "road_type": "unclassified",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1627,
+      "total_length_m": 292.26,
+      "segment_count": 1,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 414482.06879598147,
+        "south": 5888486.959082259,
+        "east": 414666.3508818074,
+        "north": 5888567.69583621
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Ashley Road', 'Ffordd Y Ffynnon']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1628,
+      "total_length_m": 160.79,
+      "segment_count": 1,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 424895.8047952318,
+        "south": 5898267.101827952,
+        "east": 424956.47858305206,
+        "north": 5898382.489075071
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Belgrave Road', 'Talbot Road']",
+      "ref": null,
+      "road_type": "unclassified",
+      "speed_limit": "30 mph",
+      "surface_type": null,
+      "id": 1629,
+      "total_length_m": 708.02,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 428595.69474376726,
+        "south": 5839126.0542078335,
+        "east": 428874.60544936487,
+        "north": 5839290.245667822
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Borth Road', 'Seaview Terrace']",
+      "ref": null,
+      "road_type": "tertiary",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1630,
+      "total_length_m": 1257.42,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 423596.4934895837,
+        "south": 5863602.565812191,
+        "east": 423771.5318475425,
+        "north": 5864161.739667503
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bridge Street', 'Y Bont Bridd  /  Bridge Street']",
+      "ref": "B4419",
+      "road_type": "secondary",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1631,
+      "total_length_m": 91.57,
+      "segment_count": 1,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 414749.9740291261,
+        "south": 5888564.06379341,
+        "east": 414793.8132736287,
+        "north": 5888641.897272146
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bro Heli', 'Ffordd-y-Faenor']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1632,
+      "total_length_m": 359.24,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 404703.6070208901,
+        "south": 5860154.906312187,
+        "east": 404793.52403121616,
+        "north": 5860256.494929422
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bro Prysor', 'Maes Gwyndy']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1633,
+      "total_length_m": 188.46,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 438090.68575781793,
+        "south": 5861316.902087045,
+        "east": 438125.84128469776,
+        "north": 5861386.4069609875
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Brony Berth', 'Bron y Berth']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1634,
+      "total_length_m": 418.84,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 400867.84047115914,
+        "south": 5859765.849476273,
+        "east": 400969.60997633473,
+        "north": 5859948.27091712
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bryn Mynach Road', 'Epworth Road']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1635,
+      "total_length_m": 377.9,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 428478.28673747263,
+        "south": 5842180.6360183675,
+        "east": 428550.1453154391,
+        "north": 5842316.06864363
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bryn Tirion', 'Coetmor Road']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1636,
+      "total_length_m": 397.81,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 428716.350626525,
+        "south": 5893044.724954865,
+        "east": 428841.5645256099,
+        "north": 5893198.732776594
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bryn Tirion', 'Victoria Square']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1637,
+      "total_length_m": 347.53,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 428959.6971694528,
+        "south": 5892948.170762934,
+        "east": 429015.41711886355,
+        "north": 5893049.353909468
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Brynmair', 'Ffordd y Pier']",
+      "ref": null,
+      "road_type": "tertiary",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1638,
+      "total_length_m": 325.04,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 425799.8932119355,
+        "south": 5826712.322789321,
+        "east": 425957.3300285003,
+        "north": 5826750.369294623
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Buckley Road', 'Ffordd Hwfa']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1639,
+      "total_length_m": 438.01,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 424241.7682123962,
+        "south": 5898453.935832789,
+        "east": 424392.7380326069,
+        "north": 5898541.996302222
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Bwlch Llanberis', 'Llanberis Pass', 'Pont y Gromlech']",
+      "ref": "A4086",
+      "road_type": "primary",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1640,
+      "total_length_m": 13427.27,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 427570.63569605676,
+        "south": 5881320.04231417,
+        "east": 432874.35532262723,
+        "north": 5884345.932948648
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Cader Road', 'Porth Canol']",
+      "ref": null,
+      "road_type": "tertiary",
+      "speed_limit": "30 mph",
+      "surface_type": null,
+      "id": 1641,
+      "total_length_m": 84.03,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 440113.9705151696,
+        "south": 5843926.248117567,
+        "east": 440155.01071146224,
+        "north": 5843935.243291459
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Cae Gadlas', 'Bro Eryl']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": "20 mph",
+      "surface_type": null,
+      "id": 1642,
+      "total_length_m": 277.01,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 459333.2734618779,
+        "south": 5862484.230212029,
+        "east": 459459.5313561169,
+        "north": 5862519.90965025
+      },
+      "analysis": null
+    },
+    {
+      "name": "['Cae Gwigin', 'Dol-Helyg']",
+      "ref": null,
+      "road_type": "residential",
+      "speed_limit": null,
+      "surface_type": null,
+      "id": 1643,
+      "total_length_m": 1919.8,
+      "segment_count": 2,
+      "start_point": null,
+      "end_point": null,
+      "bbox": {
+        "west": 426949.03267939755,
+        "south": 5896030.752315464,
+        "east": 427401.7842425737,
+        "north": 5896499.932985582
+      },
+      "analysis": null
+    }
+  ],
+  "total": 1790,
+  "page": 1,
+  "page_size": 20,
+  "pages": 90
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/statistics
+  Status : HTTP 200
+  Response:
+{
+  "road_count": 1790,
+  "segment_count": 6626,
+  "total_length_m": 2777984.5,
+  "total_length_km": 2777.98,
+  "road_type_counts": {
+    "living_street": 4,
+    "trunk": 41,
+    "primary": 99,
+    "residential": 1267,
+    "secondary": 37,
+    "tertiary": 113,
+    "unclassified": 229
+  }
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/search
+  Status : HTTP 200
+  Params : {'query': 'High'}
+  Response:
+{
+  "query": "High",
+  "total": 9,
+  "limit": 20,
+  "offset": 0,
+  "results": [
+    {
+      "id": 735,
+      "name": "High Street",
+      "ref": "A497",
+      "road_type": "primary",
+      "total_length_m": 1473.67,
+      "match_score": 68.9,
+      "center_point": [
+        -4.102491,
+        52.908429
+      ]
+    },
+    {
+      "id": 1370,
+      "name": "Stryd Fawr / High Street",
+      "ref": null,
+      "road_type": "residential",
+      "total_length_m": 183.22,
+      "match_score": 42.6,
+      "center_point": [
+        -4.27743,
+        53.14071
+      ]
+    },
+    {
+      "id": 1699,
+      "name": "['High Street', 'Glanrafon']",
+      "ref": null,
+      "road_type": "unclassified",
+      "total_length_m": 189.76,
+      "match_score": 42.2,
+      "center_point": [
+        -4.128111,
+        53.22579
+      ]
+    },
+    {
+      "id": 1701,
+      "name": "['High Street', 'Treddafydd']",
+      "ref": null,
+      "road_type": "tertiary",
+      "total_length_m": 276.38,
+      "match_score": 42.1,
+      "center_point": [
+        -4.282639,
+        53.056516
+      ]
+    },
+    {
+      "id": 1700,
+      "name": "['High Street', 'Stryd Fawr']",
+      "ref": "A470",
+      "road_type": "trunk",
+      "total_length_m": 523.58,
+      "match_score": 42.1,
+      "center_point": [
+        -3.992328,
+        53.082819
+      ]
+    },
+    {
+      "id": 1697,
+      "name": "['High Street', 'College Green']",
+      "ref": "A493",
+      "road_type": "primary",
+      "total_length_m": 42.21,
+      "match_score": 41.8,
+      "center_point": [
+        -4.086876,
+        52.58714
+      ]
+    },
+    {
+      "id": 1698,
+      "name": "['High Street', 'Ffordd Porthmadog']",
+      "ref": "A497",
+      "road_type": "primary",
+      "total_length_m": 258.62,
+      "match_score": 41.4,
+      "center_point": [
+        -4.231129,
+        52.919926
+      ]
+    },
+    {
+      "id": 1779,
+      "name": "['The Cob', 'High Street', 'Britannia Terrace']",
+      "ref": "A497",
+      "road_type": "primary",
+      "total_length_m": 3612.85,
+      "match_score": 40.3,
+      "center_point": [
+        -4.114831,
+        52.922044
+      ]
+    },
+    {
+      "id": 1774,
+      "name": "['Stryd y Porth Mawr / Eastgate Street', 'Stryd Fawr / High Street', 'Stryd Fawr', 'Stryd y Porth Mawr']",
+      "ref": null,
+      "road_type": "residential",
+      "total_length_m": 155.61,
+      "match_score": 34.6,
+      "center_point": [
+        -4.27559,
+        53.140789
+      ]
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/search/suggestions
+  Status : HTTP 200
+  Params : {'query': 'High'}
+  Response:
+{
+  "query": "High",
+  "suggestions": [
+    "High Street",
+    "Stryd Fawr / High Street",
+    "['High Street', 'Glanrafon']",
+    "['High Street', 'Treddafydd']",
+    "['High Street', 'Stryd Fawr']",
+    "['High Street', 'College Green']",
+    "['High Street', 'Ffordd Porthmadog']",
+    "['The Cob', 'High Street', 'Britannia Terrace']",
+    "['Stryd y Porth Mawr / Eastgate Street', 'Stryd Fawr / High Street', 'Stryd Fawr', 'Stryd y Porth Mawr']"
+  ]
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/nearby
+  Status : HTTP 200
+  Params : {'lat': 52.9, 'lon': -4.1, 'radius': 1000}
+  Response:
+{
+  "lat": 52.9,
+  "lon": -4.1,
+  "radius_m": 1000.0,
+  "count": 0,
+  "roads": []
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/by-name/A487
+  Status : HTTP 404
+  Response:
+{
+  "detail": "Road 'A487' not found"
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1
+  Status : HTTP 200
+  Response:
+{
+  "name": "Aber Pwll",
+  "ref": null,
+  "road_type": "residential",
+  "speed_limit": null,
+  "surface_type": null,
+  "id": 1,
+  "total_length_m": 478.19,
+  "segment_count": 2,
+  "start_point": [
+    53.190819,
+    -4.196255
+  ],
+  "end_point": [
+    53.190819,
+    -4.196255
+  ],
+  "bbox": {
+    "west": 419992.566111177,
+    "south": 5894082.21899418,
+    "east": 420100.6209337378,
+    "north": 5894181.146631741
+  },
+  "analysis": null
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/segments
+  Status : HTTP 200
+  Response:
+{
+  "road_id": 1,
+  "road_name": "Aber Pwll",
+  "segment_count": 2,
+  "segments": [
+    {
+      "id": 1,
+      "osm_id": "1343288619_1343288634",
+      "segment_length_m": 239.1,
+      "road_type": "residential",
+      "maxspeed": null,
+      "surface": null,
+      "lanes": null,
+      "width": 6.0,
+      "start_point": [
+        53.190819,
+        -4.196255
+      ],
+      "end_point": [
+        53.190943,
+        -4.197491
+      ],
+      "analysis_data": {
+        "curvature": 0.3388,
+        "turn_count": 6,
+        "sinuosity": 2.8546,
+        "bearing_changes": [
+          207.86,
+          201.69,
+          196.16,
+          166.37,
+          148.72,
+          132.33,
+          102.12,
+          96.74,
+          75.89,
+          42.65,
+          30.02,
+          27.63,
+          5.52
+        ],
+        "avg_segment_length": 18.39,
+        "coordinate_count": 14,
+        "elevation_gain": 0.0,
+        "elevation_loss": 0.0,
+        "max_slope": 0.0,
+        "avg_slope": 0.0,
+        "max_elevation": 20.0,
+        "min_elevation": 20.0
+      }
+    },
+    {
+      "id": 2,
+      "osm_id": "1343288634_1343288619",
+      "segment_length_m": 239.1,
+      "road_type": "residential",
+      "maxspeed": null,
+      "surface": null,
+      "lanes": null,
+      "width": 6.0,
+      "start_point": [
+        53.190943,
+        -4.197491
+      ],
+      "end_point": [
+        53.190819,
+        -4.196255
+      ],
+      "analysis_data": {
+        "curvature": 0.3388,
+        "turn_count": 6,
+        "sinuosity": 2.8546,
+        "bearing_changes": [
+          213.64,
+          211.57,
+          209.68,
+          221.37,
+          253.05,
+          273.63,
+          278.6,
+          310.84,
+          328.42,
+          346.85,
+          14.79,
+          18.35,
+          14.6
+        ],
+        "avg_segment_length": 18.39,
+        "coordinate_count": 14,
+        "elevation_gain": 0.0,
+        "elevation_loss": 0.0,
+        "max_slope": 0.0,
+        "avg_slope": 0.0,
+        "max_elevation": 20.0,
+        "min_elevation": 20.0
+      }
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/bbox
+  Status : HTTP 200
+  Response:
+{
+  "west": 419992.566111177,
+  "south": 5894082.21899418,
+  "east": 420100.6209337378,
+  "north": 5894181.146631741
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/geojson
+  Status : HTTP 200
+  Response:
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": 1,
+        "name": "Aber Pwll",
+        "ref": null,
+        "road_type": "residential",
+        "total_length_m": 478.19,
+        "segment_count": 2,
+        "speed_limit": null,
+        "surface_type": null,
+        "bbox": {
+          "west": 419992.566111177,
+          "south": 5894082.21899418,
+          "east": 420100.6209337378,
+          "north": 5894181.146631741
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            420074.94659227936,
+            5894166.015707437
+          ],
+          [
+            420091.01640369534,
+            5894141.078599153
+          ],
+          [
+            420096.8882623657,
+            5894127.739372249
+          ],
+          [
+            420100.6209337378,
+            5894115.159157603
+          ],
+          [
+            420097.5396457975,
+            5894102.336764158
+          ],
+          [
+            420091.27320208796,
+            5894092.071176324
+          ],
+          [
+            420083.63684844016,
+            5894085.4113767585
+          ],
+          [
+            420070.69377106073,
+            5894083.12418867
+          ],
+          [
+            420060.2799093913,
+            5894082.21899418
+          ],
+          [
+            420050.2867244794,
+            5894084.889668778
+          ],
+          [
+            420043.94643867586,
+            5894091.794277163
+          ],
+          [
+            420039.4396162834,
+            5894099.636274071
+          ],
+          [
+            420023.3214385369,
+            5894127.667662446
+          ],
+          [
+            419992.566111177,
+            5894181.146631741
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "road_id": 1,
+        "osm_id": "1343288619_1343288634",
+        "segment_length_m": 239.1,
+        "road_type": "residential",
+        "maxspeed": null,
+        "surface": null,
+        "lanes": null,
+        "width": 6.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            419992.566111177,
+            5894181.146631741
+          ],
+          [
+            420023.3214385369,
+            5894127.667662446
+          ],
+          [
+            420039.4396162834,
+            5894099.636274071
+          ],
+          [
+            420043.94643867586,
+            5894091.794277163
+          ],
+          [
+            420050.2867244794,
+            5894084.889668778
+          ],
+          [
+            420060.2799093913,
+            5894082.21899418
+          ],
+          [
+            420070.69377106073,
+            5894083.12418867
+          ],
+          [
+            420083.63684844016,
+            5894085.4113767585
+          ],
+          [
+            420091.27320208796,
+            5894092.071176324
+          ],
+          [
+            420097.5396457975,
+            5894102.336764158
+          ],
+          [
+            420100.6209337378,
+            5894115.159157603
+          ],
+          [
+            420096.8882623657,
+            5894127.739372249
+          ],
+          [
+            420091.01640369534,
+            5894141.078599153
+          ],
+          [
+            420074.94659227936,
+            5894166.015707437
+          ]
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "road_id": 1,
+        "osm_id": "1343288634_1343288619",
+        "segment_length_m": 239.1,
+        "road_type": "residential",
+        "maxspeed": null,
+        "surface": null,
+        "lanes": null,
+        "width": 6.0
+      }
+    }
+  ],
+  "bbox": {
+    "west": 419992.566111177,
+    "south": 5894082.21899418,
+    "east": 420100.6209337378,
+    "north": 5894181.146631741
+  }
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/analysis
+  Status : HTTP 200
+  Response:
+{
+  "curvature": 0.3388,
+  "turn_count": 12,
+  "elevation_gain": 0.0,
+  "elevation_loss": 0.0,
+  "max_slope": 0.0,
+  "avg_slope": 0.0,
+  "estimated_width": 6.0
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/elevation-profile
+  Status : HTTP 200
+  Response:
+{
+  "road_id": 1,
+  "road_name": "Aber Pwll",
+  "total_elevation_gain": 0.0,
+  "total_elevation_loss": 0.0,
+  "max_slope": 0.0,
+  "avg_slope": 0.0,
+  "segments": [
+    {
+      "segment_id": 1,
+      "length_m": 239.1,
+      "start_elevation": null,
+      "end_elevation": null,
+      "elevation_gain": 0.0,
+      "elevation_loss": 0.0,
+      "max_slope": 0.0,
+      "avg_slope": 0.0
+    },
+    {
+      "segment_id": 2,
+      "length_m": 239.1,
+      "start_elevation": null,
+      "end_elevation": null,
+      "elevation_gain": 0.0,
+      "elevation_loss": 0.0,
+      "max_slope": 0.0,
+      "avg_slope": 0.0
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  POST /api/v1/roads/1/analyze
+  Status : HTTP 200
+  Response:
+{
+  "name": "Aber Pwll",
+  "ref": null,
+  "road_type": "residential",
+  "speed_limit": null,
+  "surface_type": null,
+  "id": 1,
+  "total_length_m": 478.19,
+  "segment_count": 2,
+  "start_point": [
+    53.190819,
+    -4.196255
+  ],
+  "end_point": [
+    53.190819,
+    -4.196255
+  ],
+  "bbox": {
+    "west": 419992.566111177,
+    "south": 5894082.21899418,
+    "east": 420100.6209337378,
+    "north": 5894181.146631741
+  },
+  "analysis": null
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /api/v1/roads/1/segments/1/analysis
+  Status : HTTP 200
+  Response:
+{
+  "segment_id": 1,
+  "road_id": 1,
+  "osm_id": "1343288619_1343288634",
+  "segment_length_m": 239.1,
+  "analysis": {
+    "curvature": 0.3388,
+    "turn_count": 6,
+    "sinuosity": 2.8546,
+    "bearing_changes": [
+      207.86,
+      201.69,
+      196.16,
+      166.37,
+      148.72,
+      132.33,
+      102.12,
+      96.74,
+      75.89,
+      42.65,
+      30.02,
+      27.63,
+      5.52
+    ],
+    "avg_segment_length": 18.39,
+    "coordinate_count": 14
+  }
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /road/A487
+  Status : HTTP 404
+  Response:
+{
+  "detail": "Road 'A487' not found"
+}
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /docs
+  Status : HTTP 200
+  Response:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css">
+    <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
+    <title>Gwynedd Road Infrastructure API - Swagger UI</title>
+    </head>
+    <body>
+    <div id="swagger-ui">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+    <!-- `SwaggerUIBundle` is now available on the page -->
+    <script>
+    const ui = SwaggerUIBundle({
+        url: '/openapi.json',
+    "dom_id": "#swagger-ui",
+"layout": "BaseLayout",
+"deepLinking": true,
+"showExtensions": true,
+"showCommonExtensions": true,
+oauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',
+    presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIBundle.SwaggerUIStandalonePreset
+        ],
+    })
+    </script>
+    </body>
+    </html>
+    
+
+--------------------------------------------------------------------------------
+  [PASS]  GET /openapi.json
+  Status : HTTP 200
+  Response:
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Gwynedd Road Infrastructure API",
+    "description": "\n    Production-grade Geo-Spatial Road Infrastructure API for Gwynedd, Wales, UK.\n    \n    ## Features\n    \n    ### Phase 2 - Data Enrichment\n    - Smart road search with partial matching\n    - Road attributes: type, speed limit, surface\n    - Multi-segment aggregation with bounding boxes\n    \n    ### Phase 3 - Database & Performance\n    - PostgreSQL + PostGIS for spatial data\n    - SQLAlchemy ORM with connection pooling\n    - Redis/in-memory caching\n    - Pagination and filtering\n    \n    ### Phase 4 - Advanced Geo Analysis\n    - Curvature and turn count analysis\n    - Elevation profile integration\n    - Width estimation\n    - GeoJSON export\n    \n    ## Data Source\n    OpenStreetMap via OSMnx\n    \n    ## Authentication\n    Currently no authentication required (public API).\n    ",
+    "contact": {
+      "name": "Gwynedd Roads API Team"
+    },
+    "license": {
+      "name": "MIT"
+    },
+    "version": "4.0.0"
+  },
+  "paths": {
+    "/api/v1/admin/health": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Health Check",
+        "description": "Health check endpoint.",
+        "operationId": "health_check_api_v1_admin_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthCheck"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/init-db": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Initialize Database",
+        "description": "Initialize the database (PostGIS + tables).",
+        "operationId": "initialize_database_api_v1_admin_init_db_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/sync": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Sync Roads",
+        "description": "Trigger a full OpenStreetMap data synchronization (background task).",
+        "operationId": "sync_roads_api_v1_admin_sync_post",
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/cache/clear": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Clear Cache",
+        "description": "Clear all cached data.",
+        "operationId": "clear_cache_api_v1_admin_cache_clear_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/search": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "Search Roads",
+        "description": "Smart search for roads by name or reference number.\nSupports partial matches (e.g., 'High' matches 'High Street').",
+        "operationId": "search_roads_api_v1_roads_search_get",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 255,
+              "description": "Search term",
+              "title": "Query"
+            },
+            "description": "Search term"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "include_segments",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Segments"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/search/suggestions": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "Search Suggestions",
+        "description": "Autocomplete suggestions for road names and references.",
+        "operationId": "search_suggestions_api_v1_roads_search_suggestions_get",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 255,
+              "title": "Query"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 50,
+              "minimum": 1,
+              "default": 10,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/nearby": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "Nearby Roads",
+        "description": "Find roads near a given GPS coordinate.\n\nUses a simple bounding-box approximation around the point, then filters by\nstraight-line distance. This avoids requiring a full PostGIS installation\ncheck on every request.",
+        "operationId": "nearby_roads_api_v1_roads_nearby_get",
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "maximum": 90,
+              "minimum": -90,
+              "description": "Latitude",
+              "title": "Lat"
+            },
+            "description": "Latitude"
+          },
+          {
+            "name": "lon",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "maximum": 180,
+              "minimum": -180,
+              "description": "Longitude",
+              "title": "Lon"
+            },
+            "description": "Longitude"
+          },
+          {
+            "name": "radius",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "minimum": 1,
+              "description": "Radius in meters",
+              "default": 1000,
+              "title": "Radius"
+            },
+            "description": "Radius in meters"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "List Roads",
+        "description": "List all roads in the database with pagination and optional type filter.",
+        "operationId": "list_roads_api_v1_roads__get",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1,
+              "title": "Page"
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Page Size"
+            }
+          },
+          {
+            "name": "road_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by road type (highway classification)",
+              "title": "Road Type"
+            },
+            "description": "Filter by road type (highway classification)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoadListResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/statistics": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Statistics",
+        "description": "Return high-level statistics about the road network.",
+        "operationId": "get_statistics_api_v1_roads_statistics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/by-name/{name}": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road By Name",
+        "description": "Get a single road by exact name (case-insensitive).",
+        "operationId": "get_road_by_name_api_v1_roads_by_name__name__get",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoadResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road",
+        "description": "Get a road by its database ID.",
+        "operationId": "get_road_api_v1_roads__road_id__get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          },
+          {
+            "name": "include_segments",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Include segment details",
+              "default": false,
+              "title": "Include Segments"
+            },
+            "description": "Include segment details"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoadResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/segments": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road Segments",
+        "description": "Get all segments belonging to a specific road.",
+        "operationId": "get_road_segments_api_v1_roads__road_id__segments_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/bbox": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road Bbox",
+        "description": "Get the bounding box for a road.",
+        "operationId": "get_road_bbox_api_v1_roads__road_id__bbox_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoundingBox"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/geojson": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road Geojson",
+        "description": "Export a road and its segments as a GeoJSON FeatureCollection.",
+        "operationId": "get_road_geojson_api_v1_roads__road_id__geojson_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/analysis": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Road Analysis",
+        "description": "Get aggregated geometry analysis for a road.",
+        "operationId": "get_road_analysis_api_v1_roads__road_id__analysis_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoadAnalysis"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/elevation-profile": {
+      "get": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Get Elevation Profile",
+        "description": "Get the combined elevation profile for a road.",
+        "operationId": "get_elevation_profile_api_v1_roads__road_id__elevation_profile_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/analyze": {
+      "post": {
+        "tags": [
+          "Roads"
+        ],
+        "summary": "Analyze Road",
+        "description": "Re-run geometry and elevation analysis on a single road.",
+        "operationId": "analyze_road_api_v1_roads__road_id__analyze_post",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoadResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/roads/{road_id}/segments/{seg_id}/analysis": {
+      "get": {
+        "tags": [
+          "Analysis"
+        ],
+        "summary": "Get Segment Analysis",
+        "description": "Get geometry analysis for a specific segment of a road.",
+        "operationId": "get_segment_analysis_api_v1_roads__road_id__segments__seg_id__analysis_get",
+        "parameters": [
+          {
+            "name": "road_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Road Id"
+            }
+          },
+          {
+            "name": "seg_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Seg Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "API Root",
+        "description": "Root endpoint - API information and health check.",
+        "operationId": "root__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/road/{road_name}": {
+      "get": {
+        "tags": [
+          "Legacy"
+        ],
+        "summary": "Legacy Get Road",
+        "description": "Legacy endpoint - redirects to new API.\n\nUse `/api/v1/roads/by-name/{road_name}` instead.",
+        "operationId": "legacy_get_road_road__road_name__get",
+        "deprecated": true,
+        "parameters": [
+          {
+            "name": "road_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Road Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BoundingBox": {
+        "properties": {
+          "west": {
+            "type": "number",
+            "title": "West",
+            "description": "Western boundary (min longitude)"
+          },
+          "south": {
+            "type": "number",
+            "title": "South",
+            "description": "Southern boundary (min latitude)"
+          },
+          "east": {
+            "type": "number",
+            "title": "East",
+            "description": "Eastern boundary (max longitude)"
+          },
+          "north": {
+            "type": "number",
+            "title": "North",
+            "description": "Northern boundary (max latitude)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "west",
+          "south",
+          "east",
+          "north"
+        ],
+        "title": "BoundingBox",
+        "description": "Bounding box coordinates."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthCheck": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status",
+            "default": "ok"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "database": {
+            "type": "string",
+            "title": "Database",
+            "default": "connected"
+          },
+          "cache": {
+            "type": "string",
+            "title": "Cache",
+            "default": "connected"
+          },
+          "roads_loaded": {
+            "type": "integer",
+            "title": "Roads Loaded"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "version",
+          "roads_loaded",
+          "timestamp"
+        ],
+        "title": "HealthCheck",
+        "description": "Health check response."
+      },
+      "RoadAnalysis": {
+        "properties": {
+          "curvature": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Curvature",
+            "description": "Average curvature index"
+          },
+          "turn_count": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Turn Count",
+            "description": "Number of significant turns"
+          },
+          "elevation_gain": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Elevation Gain",
+            "description": "Total elevation gain in meters"
+          },
+          "elevation_loss": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Elevation Loss",
+            "description": "Total elevation loss in meters"
+          },
+          "max_slope": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Slope",
+            "description": "Maximum slope percentage"
+          },
+          "avg_slope": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Slope",
+            "description": "Average slope percentage"
+          },
+          "estimated_width": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Estimated Width",
+            "description": "Estimated road width in meters"
+          }
+        },
+        "type": "object",
+        "title": "RoadAnalysis",
+        "description": "Road geometry analysis results."
+      },
+      "RoadListResponse": {
+        "properties": {
+          "roads": {
+            "items": {
+              "$ref": "#/components/schemas/RoadResponse"
+            },
+            "type": "array",
+            "title": "Roads"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "page": {
+            "type": "integer",
+            "title": "Page"
+          },
+          "page_size": {
+            "type": "integer",
+            "title": "Page Size"
+          },
+          "pages": {
+            "type": "integer",
+            "title": "Pages"
+          }
+        },
+        "type": "object",
+        "required": [
+          "roads",
+          "total",
+          "page",
+          "page_size",
+          "pages"
+        ],
+        "title": "RoadListResponse",
+        "description": "Response for listing multiple roads."
+      },
+      "RoadResponse": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 2,
+            "title": "Name",
+            "description": "Road name"
+          },
+          "ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 50
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ref",
+            "description": "Road reference code (e.g., A487)"
+          },
+          "road_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 50
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Road Type",
+            "description": "Highway classification"
+          },
+          "speed_limit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 50
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Speed Limit",
+            "description": "Speed limit"
+          },
+          "surface_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Surface Type",
+            "description": "Surface material"
+          },
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "total_length_m": {
+            "type": "number",
+            "title": "Total Length M"
+          },
+          "segment_count": {
+            "type": "integer",
+            "title": "Segment Count"
+          },
+          "start_point": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Start Point",
+            "description": "[latitude, longitude]"
+          },
+          "end_point": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Point",
+            "description": "[latitude, longitude]"
+          },
+          "bbox": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BoundingBox"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "analysis": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RoadAnalysis"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "id",
+          "total_length_m",
+          "segment_count"
+        ],
+        "title": "RoadResponse",
+        "description": "Schema for road API response."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
+
+--------------------------------------------------------------------------------
+  [TIMEOUT/ERROR]  POST /api/v1/admin/sync
+  Status : HTTP None
+  Response:
+timed out
+
+================================================================================
+  SUMMARY:  21 PASS  |  0 FAIL  |  1 TIMEOUT/ERROR
+================================================================================
